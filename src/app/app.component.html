@@ -1,0 +1,8 @@
+<p-splitter *ngIf="messages && messages.length > 0" [style]="{'height': '100vh'}">
+  <ng-template pTemplate *ngFor="let message of messages;">
+    <app-JsonViewer [componentPrefix]="message.Name" [jsonData]="message.MessageObj"></app-JsonViewer>
+  </ng-template>
+</p-splitter>
+<div *ngIf="!messages || messages.length == 0">
+  No messages yet
+</div>

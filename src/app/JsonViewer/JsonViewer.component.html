@@ -1,0 +1,14 @@
+<fieldset>
+  <legend>{{componentPrefix}}</legend>
+  <p-tabView >
+    <p-tabPanel header="Json">
+       <textarea pInputTextarea> {{jsonData | json}}</textarea> 
+    </p-tabPanel>
+    <p-tabPanel header="Tree">
+      <ngx-json-viewer [json]="jsonData" [depth]="2"></ngx-json-viewer>
+    </p-tabPanel>
+    <p-tabPanel header="Table">
+        
+    </p-tabPanel>
+  </p-tabView>
+</fieldset>
