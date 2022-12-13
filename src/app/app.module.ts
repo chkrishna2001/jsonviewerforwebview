@@ -10,11 +10,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { JsonViewerComponent } from './JsonViewer/JsonViewer.component';
 import { NgxJsonViewerModule } from 'ngx-json-viewer';
+import { JsonToTablePipe } from './pipes/json-to-table.pipe';
+import { SafePipeModule } from 'safe-pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    JsonViewerComponent
+    JsonViewerComponent,
+    JsonToTablePipe
   ],
   imports: [
     BrowserModule,
@@ -23,7 +26,8 @@ import { NgxJsonViewerModule } from 'ngx-json-viewer';
     TabViewModule,
     SplitterModule,
     InputTextareaModule,
-    NgxJsonViewerModule 
+    NgxJsonViewerModule,
+    SafePipeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

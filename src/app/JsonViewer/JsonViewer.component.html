@@ -8,7 +8,7 @@
       <ngx-json-viewer [json]="jsonData" [depth]="2"></ngx-json-viewer>
     </p-tabPanel>
     <p-tabPanel header="Table">
-        
+        <div [innerHTML]="jsonData | jsontotable | safe :'html'"></div>
     </p-tabPanel>
   </p-tabView>
 </fieldset>

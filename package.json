@@ -18,12 +18,13 @@
     "@angular/platform-browser": "^15.0.0",
     "@angular/platform-browser-dynamic": "^15.0.0",
     "@angular/router": "^15.0.0",
+    "jest-editor-support": "*",
     "ngx-json-viewer": "^3.2.1",
     "primeng": "^15.0.0-rc.1",
     "rxjs": "~7.5.0",
+    "safe-pipe": "^2.0.5-0",
     "tslib": "^2.3.0",
-    "zone.js": "~0.12.0",
-    "jest-editor-support": "*"
+    "zone.js": "~0.12.0"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^15.0.3",
